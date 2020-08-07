@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  background: #fafafa;
 }
+.app_header{
+  position:sticky;
+  top:0;
+  z-index:1;
+  background-color: white !important; 
+  border-bottom: 1px solid lightgray;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app_header_image{
+  object-fit: contain;
+}
+.input-container{
+  width: 350px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+.MuiInput-root{
+  margin-bottom: 10px !important;
+}
+.profile{
+  border-radius: 28px;
+  position: fixed;
+  top: 15%;
+  right: 15%;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  padding: 40px;
+  height: 200px;
+  border: 1px solid lightgray;
+}
+.profile_container{
+  text-align: center;
+}
+.profile_avatar{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 12px;
+  margin-left: 15px; 
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media all and (max-width: 1200px){
+  .profile{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .hole_post{
+    display:flex;
+    justify-content:center !important;
+  }
+  
+}
+
+@media all and (max-width: 500px){
+  .input-container{
+    width: 220px;
   }
 }
